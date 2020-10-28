@@ -1,6 +1,6 @@
 programa  {
 	funcao inicio (){
-		escreva ("meu primiro programa em portugol")
+		escreva ("meu primeiro programa em portugol")
 	}
 }
 
@@ -9,7 +9,7 @@ programa  {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 77; 
+ * @POSICAO-CURSOR = 52; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
