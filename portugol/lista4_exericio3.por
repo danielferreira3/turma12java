@@ -20,7 +20,9 @@ b) Uma matriz M2 cujos elementos serão as diferenças dos elementos de mesma po
 		inteiro colunam1
 		inteiro colunam2
 		inteiro quadrinhos[LINHAN1][COLUNAN1]
+		inteiro quadrinho2[LINHAN2][COLUNAN2]
 		inteiro quadrinhosSoma=0
+		inteiro quadrinhosSub = 0
 	
 		inteiro x=0,y=0
 		para (x=0; x< LINHAN1; x++)
@@ -40,13 +42,13 @@ b) Uma matriz M2 cujos elementos serão as diferenças dos elementos de mesma po
 			
 			para (y=0; y< COLUNAN2; y++)
 			{	
-				quadrinhos[x][y] = Util.sorteia(1, 9)
-				escreva (quadrinhos[x][y])
+				quadrinho2[x][y] = Util.sorteia(1, 9)
+				escreva (quadrinho2[x][y])
 				escreva(" ")
 			}
 			escreva ("\n")
 		}
-		escreva("\n")
+		escreva ("\n")
 		para (x=0; x< LINHAM1; x++)
 		
 		{
@@ -54,30 +56,29 @@ b) Uma matriz M2 cujos elementos serão as diferenças dos elementos de mesma po
 			para (y=0; y< COLUNAM1; y++)
 			{	
 				
-				quadrinhosSoma = quadrinhosSoma + quadrinhos[x][y]
+				
+				quadrinho2[x][y] = quadrinho2[x][y] + quadrinhos[x][y]
+				quadrinhosSoma = quadrinho2[x][y]
 				escreva (quadrinhosSoma)
 				escreva(" ")
+				
 			}
 			escreva ("\n")
-		}
-		escreva("\n")
-		para (x=0; x< LINHAM1; x++)
-		
-		{
 			
 			para (y=0; y< COLUNAM2; y++)
+			
 			{	
-				se (x != y)
-				{
 					
-					
-					
-					escreva (quadrinhos[x][y])
-					escreva(" ")
-				}
+				quadrinho2[x][y] = quadrinho2[x][y] - quadrinhos[x][y]
+				quadrinhosSub = quadrinho2[x][y]
+				escreva (quadrinhosSub)
+				escreva(" ")
 			}
-			escreva ("\n")
+			escreva("\n")
+			
 		}
+		
+		
 	}
 	
 }
@@ -86,7 +87,7 @@ b) Uma matriz M2 cujos elementos serão as diferenças dos elementos de mesma po
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1437; 
+ * @POSICAO-CURSOR = 1569; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
