@@ -4,7 +4,7 @@ programa
 		//multa de 4,00 reais
 		inteiro pesoDeTomate 
 		real exesso
-		real valorDaMulta = 4
+		real valorDaMulta = 4.00
 		inteiro pesoMaximo = 50
 	funcao inicio()
 	{
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 521; 
+ * @POSICAO-CURSOR = 158; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
